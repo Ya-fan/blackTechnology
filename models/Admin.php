@@ -77,7 +77,7 @@ class Admin extends \yii\db\ActiveRecord
     public function verifyPassword( $password )
     {  
        $verify_pwd =  $this->getSaltPassword( $password ) ;
-   
+
         if( $verify_pwd != $this->login_pwd )
         {
             return false;

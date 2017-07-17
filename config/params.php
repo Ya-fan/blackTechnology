@@ -5,7 +5,8 @@ return [
    	'domain'=>[
    		'www'	    =>	'http://www.black.com',
    		'admin'	 =>	'http://www.black.com/admin',
-   		'web'	    =>	'http://www.black.com/web',
+         'web'     =>   'http://www.black.com/web',
+   		'seller'	 =>	'http://www.black.com/seller',
    	],
 
    	'upload'=>[
@@ -16,6 +17,11 @@ return [
       
       'title'=>[
             'name'=>'商城后台',
+            'image'=>'/web/images/common/qrcode_for_gh_ca3d3993e573_430.jpg',
+      ],
+      
+      'seller'=>[
+            'name'=>'商户后台',
             'image'=>'/web/images/common/qrcode_for_gh_ca3d3993e573_430.jpg',
       ],
 
