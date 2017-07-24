@@ -1,3 +1,4 @@
+
 <?php 
 use \app\common\services\UrlService;
 use app\assets\AdminAsset;
@@ -108,7 +109,7 @@ AdminAsset::register( $this );
 			<dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="<?= UrlService::buildWwwUrl('/brand/index') ?>" title="品牌管理">品牌管理</a></li>
+					<li><a href="product-list.html" title="品牌管理">品牌管理</a></li>
 					<li><a href="product-category.html" title="分类管理">分类管理</a></li>
 					<li><a href="product-list.html" title="产品管理">产品管理</a></li>
 				</ul>

@@ -7,6 +7,7 @@ use yii\web\Controller;
 *  集成公用方法 提供所有的Controller使用
 *  get,post,setCookie,getCookie,removeCookie,rendeJosn
 */
+header('content-type:text/html;charset=utf8');
 class BaseController extends Controller
 {	
 	/**

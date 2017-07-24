@@ -149,10 +149,21 @@ class BaseAdminController extends BaseController
 	{
 		return md5( $admin_info['login_name'].$admin_info['login_pwd'].$admin_info['login_salt'] );
 	}
+     
+     //无限极分类
+	 public function Getcate($data,$p_id = 0)
+      {
+        $CateData = [];
+        foreach ($data as $val) {
+          if ($val['p_id']==$p_id) {
+            $val['Erz'] = $this->Getcate($data,$val['cate_id']);
+            $CateData[] = $val;
+          } 
+        }
+        return $CateData;
+      } 
 
-	
-
-
+   
 
 }
 
